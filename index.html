@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/sqrtFunc.js"></script>
+    </head>
+    <body>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <div class="card">
+            <img class="card-photo" src="src/equat.jpg" alt="Profile Photo" height="250" width="400">
+<!--            <h1 class="name">Vitaly Aydov's NC-assignment</h1>-->
+            <p id="buttonsParagraph">
+                <input class="chips" type="text" id="firstCoef" placeholder="Coef A">
+                <input class="chips" type="text" id="secondCoef" placeholder="Coef B">
+                <input class="chips" type="text" id="thirdCoef" placeholder="Coef C">
+                <!-- <button value="Result" onclick="clickResult()"></button> -->
+                <input class="buttonScaled" type="button" value="Result" id="btnResult" onclick="clickResult()">
+                <input type="button" value="Clear" id="btnClear" onclick="clearFields()">
+            </p>
+            <p class="description" id="statusBar">
+                Waiting for input
+            </p>
+            <table class="table-cell-center" id="tableHistory">
+                <thead>
+                    <tr>
+                        <th>Coef A</th>
+                        <th>Coef B</th>
+                        <th>Coef C</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+        </table>
+        <br>
+        <pr>
+            <input class="buttonBottom" type="button" value="Clear history" id="btnDeleteRows" onclick="deleteRows()">
+        </pr>
+        </div>
+        
+    </body>
+</html>
