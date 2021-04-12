@@ -1,8 +1,6 @@
 sqrtFunc = function(a, b, c) {
     let d = Math.pow(-b, 2) - 4*a*c;
-    console.log(d, "hey");
     if (d < 0) {
-        console.log(d, "hey");
         return null;
     }
     return [(-b + Math.sqrt(d)) / (2*a), (-b - Math.sqrt(d)) / (2*a)];
@@ -64,12 +62,9 @@ function clickResult() {
 
 function zebraMode() {
     let tableBody = document.getElementById("tableHistory").getElementsByTagName("tbody");
-    console.log(tableBody);
     let table = document.getElementById("tableHistory");
-    console.log(tableBody.length);
     for (let i = 0; i < tableBody.length; i++) {
         let rows = tableBody[i].getElementsByTagName("tr");
-        console.log(rows.length);
         for (let j = 0; j < rows.length; j++) {
             if (j % 2 == 0) {
                 rows[j].className = "even-row"
